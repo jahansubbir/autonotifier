@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using Autonotifier2.Models;
-using Autonotifier2.Utilities;
+using AutoNotifier.Models;
+using AutoNotifier.Utilities;
 
-namespace Autonotifier2.DataAccess
+namespace AutoNotifier.DataAccess
 {
    public  class ExcelGateway : Gateway, IExcelGateway
    {

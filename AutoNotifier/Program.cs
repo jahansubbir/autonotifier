@@ -4,12 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Autofac;
-using Autonotifier2.BusinessLogic;
-using Autonotifier2.DataAccess;
-using Autonotifier2.Models;
-using Autonotifier2.Utilities;
+using AutoNotifier.BusinessLogic;
+using AutoNotifier.Models;
+using AutoNotifier.Utilities;
 
-namespace Autonotifier2
+namespace AutoNotifier
 {
     static class Program
     {
@@ -19,8 +18,9 @@ namespace Autonotifier2
         [STAThread]
         static void Main()
         {
-            var container=DependancyInjector.GetInjector();
-            var excelGateway=container.Resolve<IExcelGateway>();
+
+            var container = DependancyInjector.GetInjector();
+            var excelGateway = container.Resolve<IExcelGateway>();
             var jsonColumnHeaderReader = container.Resolve<JsonColumnHeaderReader>();
             var outstandingDataManager = container.Resolve<OutstandingDataManager>();
 

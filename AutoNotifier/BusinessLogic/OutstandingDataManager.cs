@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-using Autonotifier2.Models;
+using AutoNotifier.Models;
 
-namespace Autonotifier2.BusinessLogic
+namespace AutoNotifier.BusinessLogic
 {
     public class OutstandingDataManager
     {
